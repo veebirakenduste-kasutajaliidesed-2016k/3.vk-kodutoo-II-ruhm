@@ -1,6 +1,13 @@
 
-$(document).ready(function() {
-   $("#button").click(function(event){
-      $('#pictures').load('result.html');
-   });
+$(document).ready(function(){
+    $("input[name=load]").click(function(){
+        $("#picture").show();
+        var ajax = $.ajax({
+                      type: "GET",
+                      url : 'cat1.jpg',
+                      success : function(data){
+                            $("#picture").hide();
+                      },
+                   });
+    });
 });
