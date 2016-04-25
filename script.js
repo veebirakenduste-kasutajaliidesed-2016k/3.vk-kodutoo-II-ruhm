@@ -8,9 +8,5 @@ $(document).ready(function(){
                       type: "GET",
                       url : 'cat1.jpg',
                    });
-       var ajax1 = $.ajax({
-                     type: "GET",
-                     url : 'cat2.jpg',
-                  });
     });
 });
