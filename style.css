@@ -1,0 +1,15 @@
+#chartContainer, #chartContainer2, #chartContainer3, #chartContainer4, #chartContainer5, #chartContainer6{
+  display:none;
+  height: 300px;
+  width: 600px;
+}
+
+body{
+  margin-left: 2.5%;
+  margin-top: 1.5%;
+}
+
+#sLevel, #sID, #sKills, #sAssists, #sTowers, #sMinions, #sNeutralMinions, #sWins,
+#rWins, #rLosses, #wlRatio, #aKills, #aAssists, #aTurrets, #aWins{
+  font-weight: bold;
+}
