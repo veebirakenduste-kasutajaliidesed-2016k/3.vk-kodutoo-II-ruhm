@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>League of Legends' summoner data</title>
+<script src="jquery-1.12.3.min.js"></script>
+<script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="script.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <br />
+  <input id="APIKey" />
+  <br />Summoner Name
+  <br />
+  <input id="summonerName" />
+  <input type="submit" onclick="summonerLookUp();setTimeout(drawGraph, 1000);setTimeout(writeToJSON, 2000); setTimeout(ajax_post, 3000);" />
+  <br />
+  <br />Summoner Level: <span id="sLevel"></span>
+
+  <br />Summoner ID: <span id="sID"></span>
+  <br />
+  <br />
+  Stats for normal Summoner's Rift:
+  <br />Kills: <span id="sKills"></span>
+  <br />Assists: <span id="sAssists"></span>
+  <br />Turrets: <span id="sTowers"></span>
+  <br />Minions: <span id="sMinions"></span>
+  <br />Neutral minions: <span id="sNeutralMinions"></span>
+  <br />Wins: <span id="sWins"></span>
+  <br />
+  <br />
+  Stats for ranked Summoner's Rift:
+  <br />Wins: <span id="rWins"></span>
+  <br />Losses: <span id="rLosses"></span>
+  <br />Win Ratio: <span id="wlRatio"></span>
+  <br />
+  <br />
+  Stats for ARAM:
+  <br />Kills: <span id="aKills"></span>
+  <br />Assists: <span id="aAssists"></span>
+  <br />Turrets: <span id="aTurrets"></span>
+  <br />Wins: <span id="aWins"></span>
+  <div id="chartContainer"></div>
+  <div id="chartContainer2"></div>
+  <div id="chartContainer3"></div>
+  <div id="chartContainer4"></div>
+  <div id="chartContainer5"></div>
+  <div id="chartContainer6"></div>
+</body>
+</html>
