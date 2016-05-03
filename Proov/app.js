@@ -19,7 +19,7 @@
     this.init();
   };
 
-  window.Scoreboard = Scoreboard;
+  window.Scoreboard = Scoreboard; //mida tähendab siin see muutuja külge panemine?
 
   Scoreboard.routes = {
     'home-view':{
@@ -57,7 +57,7 @@
          this.routeChange();
        }
 
-
+       //Siin saan asjad kätte localstorage'st
       //  if(localStorage.entries){
       //    this.entries = JSON.parse(localStorage.entries);
        //
@@ -67,31 +67,7 @@
       //      var li = new_entry.createHtmlElement();
       //      document.querySelector('.list-of-entries').appendChild(li);
       //    });
-      //  }else{
-      //Siin küsin asjad AJAXiga
-      var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function() {
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
-          console.log(xhttp.responseText);
-					//tekst -> objektideks
-          Scoreboard.instance.entries = JSON.parse(xhttp.responseText);
-          console.log(Scoreboard.instance.entries);
-
-          //teen htmli
-          Scoreboard.instance.entries.forEach(function(entry){
-            var new_entry = new Entry(entry.id, entry.title, entry.team_1, entry.team_2, entry.result_1, entry.result_2);
-            var li = new_entry.createHtmlElement();
-            document.querySelector('.list-of-entries').appendChild(li);
-          });
-          //salvestan localStorage'sse
-          // localStorage.setItem('entries', JSON.stringify(Scoreboard.instance.entries));
-
-        }
-      };
-      xhttp.open("GET", "save.php", true);
-			xhttp.send();
-  //  }
-
+      //  }
        //Kuulan hiireklikke nupul
        this.bindEvents();
 
@@ -99,6 +75,7 @@
 
     bindEvents: function(){
       document.querySelector('.add-new-entry').addEventListener('click', this.addNewClick.bind(this));
+      document.querySelector('.test').addEventListener('click', this.loadDoc.bind(this));
     },
     deleteEntry: function(event){
       //millele vajutati
@@ -122,28 +99,15 @@
       ul.removeChild(li);
       var delete_id = event.target.dataset.id;
 
-      //Kustutan ka massiivist ja uuendan LocalStoraget
-      for(var i=0; i<this.entries.length; i++){
-        if(this.entries[i].id == delete_id){
-          //kustutan kohal [i]
-          this.entries.splice(i, 1);
-          break;
-        }
-      }
-
-      //AJAX
-      var xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        console.log(xhttp.readyState);
-        if (xhttp.readyState == 4 && xhttp.status == 200) {
-         console.log(xhttp.responseText);
-        }
-      };
-      //teeb päringu
-      xhttp.open("GET", "save.php?delete="+event.target.dataset.id, true);
-      xhttp.send();
-
-      localStorage.setItem('entries', JSON.stringify(this.entries));
+      // //Kustutan ka massiivist ja uuendan LocalStoraget
+      // for(var i=0; i<this.entries.length; i++){
+      //   if(this.entries[i].id == delete_id){
+      //     //kustutan kohal [i]
+      //     this.entries.splice(i, 1);
+      //     break;
+      //   }
+      // }
+      // localStorage.setItem('entries', JSON.stringify(this.entries));
     },
     editEntry: function(event){
       var selected_id = event.target.dataset.id;
@@ -185,36 +149,20 @@
       var result_2 = document.querySelector('.result_2').value;
       var id = guid();
 
-      if (title !== "" && team_1 !== "" && team_2 !== "" && result_1 !== "" && result_2 !== ""){
+      // if (title !== "" && team_1 !== "" && team_2 !== "" && result_1 !== "" && result_2 !== ""){
 
-        var new_entry = new Entry(id, title, team_1, team_2, result_1, result_2);
-        //Lisan andmed massiivi
-        this.entries.push(new_entry);
-        console.log(JSON.stringify(this.entries));
-        localStorage.setItem('entries', JSON.stringify(this.entries));
-        // var li = new_entry.createHtmlElement();
-        // document.querySelector('.list-of-entries').appendChild(li);
-        // //document.querySelector("span.error").innerHTML="";
-        // window.location.reload(); //sellega puhastan väljad. avastasin, et mozillaga ei puhasta reloadimine väljasid ära.
-        //Salvestan AJAXiga
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          console.log(xhttp.readyState);
-          if (xhttp.readyState == 4 && xhttp.status == 200) {
-           console.log(xhttp.responseText);
-          }
-        };
-
-        //teeb päringu
-        xhttp.open("GET", "save.php?id="+id+"&title="+title+"&team_1="+team_1+"&team_2="+team_2+"&result_1="+result_1+"&result_2="+team_2, true);
-        xhttp.send();
-
-         // 2) lisan selle htmli listi juurde
-         var li = new_entry.createHtmlElement();
-         document.querySelector('.list-of-entries').appendChild(li);
-      }else{
-        document.querySelector("span.error").innerHTML="Kõik väljad on kohustuslikud";
-        }
+      //   var new_entry = new Entry(id, title, team_1, team_2, result_1, result_2);
+      //   //Lisan andmed massiivi
+      //   this.entries.push(new_entry);
+      //   console.log(JSON.stringify(this.entries));
+      //   localStorage.setItem('entries', JSON.stringify(this.entries));
+      //   var li = new_entry.createHtmlElement();
+      //   document.querySelector('.list-of-entries').appendChild(li);
+      //   //document.querySelector("span.error").innerHTML="";
+      //   window.location.reload(); //sellega puhastan väljad. avastasin, et mozillaga ei puhasta reloadimine väljasid ära.
+      // }else{
+      //   document.querySelector("span.error").innerHTML="Kõik väljad on kohustuslikud";
+      //   }
     },
     routeChange: function(event){
 
@@ -246,6 +194,17 @@
        //console.log(location.hash);
        document.querySelector('.'+this.currentRoute).className += ' active-menu';
 
+     },
+     //katsetan
+     loadDoc: function(){
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function() {
+         if (xhttp.readyState == 4 && xhttp.status == 200) {
+           document.getElementById("demo").innerHTML = xhttp.responseText;
+         }
+       };
+        xhttp.open("GET", "data.txt", true);
+        xhttp.send();
      }
   }; //Scoreboard'i lõpp
 
