@@ -19,6 +19,8 @@
     },
     bindEvents: function(){
       document.querySelector('.save').addEventListener('click', this.save.bind(this));
+      document.querySelector('.load').addEventListener('click', this.load.bind(this));
+
 
     },
     save: function(event){
@@ -38,6 +40,16 @@
       //teeb päringu
       xhttp.open("GET", "save.php?name="+name, true);
       xhttp.send();
+    },
+    load: function(){
+       var xhttp = new XMLHttpRequest();
+       xhttp.onreadystatechange = function() {
+         if (xhttp.readyState == 4 && xhttp.status == 200) {
+           document.getElementById("load_data").innerHTML = xhttp.responseText;
+         }
+       };
+        xhttp.open("GET", "data.txt", true);
+        xhttp.send();
     }
   }; //api lõpp
 

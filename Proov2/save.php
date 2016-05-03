@@ -11,7 +11,7 @@
 		
 		//salvestan juurde
 		$object = new StdClass();
-		$object->id = $_GET["name"];
+		$object->name = $_GET["name"];
 		
 		
 		//Lisan massiivi juurde
@@ -24,19 +24,7 @@
 		file_put_contents($file_name, $json);
 	}
 	
-	if(isset($_GET["delete"]) && !empty($_GET["delete"])){
 
-
-    for($i=0; $i<sizeof($entries); $i++){
-      if($_GET["delete"] == $entries[$i]->id){
-        unset($entries[$i]);
-
-      }
-    }
-    file_put_contents($file_name, json_encode($entries));
-  }
-
-  echo(json_encode($entries));
 	
 	var_dump($entries);
 
