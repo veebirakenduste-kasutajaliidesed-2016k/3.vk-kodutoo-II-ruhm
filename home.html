@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feed</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="isDebug: 1, async: 1, parseOnLoad: 1"></script>
+  <script>
+  $(document).ready(function(){
+    require(["dojo/dom", "dojo/on", "dojo/request", "dojo/domReady!"],
+      function(dom, on, request){
+        var resultDiv = dom.byId("resultDiv");
+        on(dom.byId('textButton'), "click", function(evt){
+          request.get("test.txt").then(
+            function(response){
+              resultDiv.innerHTML = "<pre>" + response + "</pre>";
+            },
+            function(error){
+              resultDiv.innerHTML = "<div class=\"error\">" + error + "<div>";
+            });
+        });
+      });
+    });
+  </script>
+  <style>
+  </style>
+</head>
+<body>
+		<h1>Näita faili sisu ekraanil</h1>
+		<div><button id="textButton">Kuva faili sisu</button></div>
+		<div id="resultDiv"></div>
+	</body>
+</html>
