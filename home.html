@@ -7,39 +7,46 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="isDebug: 1, async: 1, parseOnLoad: 1"></script>
   <script>
-  $(document).ready(function(){
-    require(["dojo/dom", "dojo/on", "dojo/request", "dojo/domReady!"],
-      function(dom, on, request){
-        var resultDiv = dom.byId("resultDiv");
-        on(dom.byId('textButton'), "click", function(evt){
-          request.get("luuletused/"+Math.round(Math.random()*2)+".txt").then(
-            function(response){
-              resultDiv.innerHTML = "<pre>" + response + "</pre>";
-            },
-            function(error){
-              resultDiv.innerHTML = "<div class=\"error\">" + error + "<div>";
-            });
+    $(document).ready(function(){
+      require(["dojo/dom", "dojo/on", "dojo/request", "dojo/domReady!"],
+        function(dom, on, request){
+          var resultDiv = dom.byId("resultDiv");
+          on(dom.byId('textButton'), "click", function(evt){
+            request.get("luuletused/"+Math.round(Math.random()*2)+".txt").then(
+              function(response){
+                resultDiv.innerHTML = "<pre>" + response + "</pre>";
+              },
+              function(error){
+                resultDiv.innerHTML = "<div class=\"error\">" + error + "<div>";
+              });
+          });
         });
       });
-    });
   </script>
+  <!-- http://jsfiddle.net/rtoal/ThPEH/ -->
+  <script src="tictactoe.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Koduleht</h1>
-      <p>See leht kuvab sulle ühe kolmest luuletusest nupu vajutusega</p>
+      <h1>Luuletused</h1>
+      <p>See leht kuvab sulle ühe kolmest luuletusest nupu vajutusega ja samal ajal on võimalik trips-traps-trulli mängida</p>
     </div>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-5">
-        <div><button type="button" id="textButton" class="btn btn-primary">Kuva faili sisu</button></div><br><br>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-5">
+          <div><button type="button" id="textButton" class="btn btn-primary">Kuva luuletus</button></div><br>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+      		<div id="resultDiv"></div><br>
+        </div>
       </div>
-      <div class="col-md-6 col-md-offset-3">
-    		<div id="resultDiv"></div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-5">
+      		<div id="tictactoe"></div><br>
+        </div>
       </div>
-    </div>
   </div>
 
 </body>
