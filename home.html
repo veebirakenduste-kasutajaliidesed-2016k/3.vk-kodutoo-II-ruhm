@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Feed</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js" data-dojo-config="isDebug: 1, async: 1, parseOnLoad: 1"></script>
   <script>
@@ -11,7 +12,7 @@
       function(dom, on, request){
         var resultDiv = dom.byId("resultDiv");
         on(dom.byId('textButton'), "click", function(evt){
-          request.get("test.txt").then(
+          request.get("luuletused/"+Math.round(Math.random()*2)+".txt").then(
             function(response){
               resultDiv.innerHTML = "<pre>" + response + "</pre>";
             },
@@ -22,12 +23,24 @@
       });
     });
   </script>
-  <style>
-  </style>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-		<h1>Näita faili sisu ekraanil</h1>
-		<div><button id="textButton">Kuva faili sisu</button></div>
-		<div id="resultDiv"></div>
-	</body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Koduleht</h1>
+      <p>See leht kuvab sulle ühe kolmest luuletusest nupu vajutusega</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-5">
+        <div><button type="button" id="textButton" class="btn btn-primary">Kuva faili sisu</button></div><br><br>
+      </div>
+      <div class="col-md-6 col-md-offset-3">
+    		<div id="resultDiv"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
