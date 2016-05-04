@@ -2,17 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- http://xdsoft.net/jqplugins/flipcountdown/ -->
+  <script type="text/javascript" src="./jquery.min.js"></script>
+  <script type="text/javascript" src="./jquery.flipcountdown.js"></script>
+  <link rel="stylesheet" type="text/css" href="./jquery.flipcountdown.css" />
+
   <script src="app.js"></script>
+
+  <script>
+    $(function(){
+      $('#flipcountdownbox1').flipcountdown({
+        size:'lg',
+        beforeDateTime:'1/01/2017 00:00:01'
+       });
+    });
+  </script>
   <title>App</title>
 </head>
 <body>
   <h1>Siin salvestan</h1>
-  <label for="name">Nimi: <span style="color:red" class="error"></label><br>
-  <input type="text" name="name" class="name"><br>
-  <button class="save">Salvesta</button>
+  <label for="name">Kuupäev (kuu/kuupäev/aasta hh:mm:ss): <span style="color:red" class="error"></label><br>
+  <input type="text" name="time" class="time"><br>
+  <button class="save">Save</button>
   <h1>Siin kysin andmebaasist</h1>
-  <button class="load">Nupp</button>
+  <button class="load">Load</button>
   <div id="load_data"></div>
+  <div id="flipcountdownbox1"></div>
 
 
 

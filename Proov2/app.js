@@ -24,9 +24,9 @@
 
     },
     save: function(event){
-      var name = document.querySelector('.name').value;
+      var time = document.querySelector('.time').value;
 
-      var new_name = new Name(name);
+      var new_time = new Time(time);
 
       //Salvestan AJAXiga
       var xhttp = new XMLHttpRequest();
@@ -38,24 +38,68 @@
       };
 
       //teeb päringu
-      xhttp.open("GET", "save.php?name="+name, true);
+      xhttp.open("GET", "save.php?time="+time, true);
       xhttp.send();
     },
     load: function(){
-       var xhttp = new XMLHttpRequest();
+
+      $.ajax({url: "data.txt", success: function(result){
+
+        document.getElementById("load_data").innerHTML = result;
+
+        var arrayFromFile = JSON.parse(result);
+
+        //arrayFromFile[arrayFromFile.length-1].name;
+
+
+        for(var i=0; i<arrayFromFile.length; i++){
+          var newDiv = document.createElement('div');
+          newDiv.id = "timer_"+(Math.random()*1000).toFixed();
+
+          document.querySelector('body').appendChild(newDiv);
+
+          $('#'+newDiv.id).flipcountdown({
+            size:'lg',
+            beforeDateTime: arrayFromFile[i].time
+           });
+        }
+
+     }});
+
+       /*var xhttp = new XMLHttpRequest();
        xhttp.onreadystatechange = function() {
          if (xhttp.readyState == 4 && xhttp.status == 200) {
            document.getElementById("load_data").innerHTML = xhttp.responseText;
+
+           var arrayFromFile = JSON.parse(xhttp.responseText);
+
+           //arrayFromFile[arrayFromFile.length-1].name;
+
+
+           for(var i=0; i<arrayFromFile.length; i++){
+             var newDiv = document.createElement('div');
+             newDiv.id = "timer_"+(Math.random()*1000).toFixed();
+
+             document.querySelector('body').appendChild(newDiv);
+
+             $('#'+newDiv.id).flipcountdown({
+               size:'lg',
+               beforeDateTime: arrayFromFile[i].time
+              });
+           }
+
+
          }
        };
         xhttp.open("GET", "data.txt", true);
-        xhttp.send();
+        xhttp.send();*/
+
     }
   }; //api lõpp
 
-  var Name = function(new_name){
-    this.name = new_name;
-    console.log('uus nimi');
+  var Time = function(new_time){
+    this.name = new_time;
+    console.log('uus aeg');
   };
 
   window.onload = function(){

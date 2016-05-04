@@ -7,11 +7,11 @@
 	//massiiv olemasolevate sissekannetega
 	$entries = json_decode($entries_from_file);
 	
-	if(isset($_GET["name"]) && !empty($_GET["name"])){
+	if(isset($_GET["time"]) && !empty($_GET["time"])){
 		
 		//salvestan juurde
 		$object = new StdClass();
-		$object->name = $_GET["name"];
+		$object->time = $_GET["time"];
 		
 		
 		//Lisan massiivi juurde
