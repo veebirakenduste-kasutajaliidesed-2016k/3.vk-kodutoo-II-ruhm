@@ -32,7 +32,7 @@
         success: function (data) {
           $(data).find("a").attr("href", function (i, val) {
               if( val.match(/\.(jpeg|jpg|png)$/) ) {
-                  $("body").append( "<img src='"+ "images/" + val +"'>" );
+                  $("#gallery-img").append( "<div id='gallery-img' class='col-xs-6 col-md-3'><a class='thumbnail'><img class='image' src='"+ "images/" + val +"'></a></div>" );
               }
           });
         }
