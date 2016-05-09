@@ -23,7 +23,7 @@
       },
 
       mouseEvents: function() {
-        document.querySelector("#upload-img").addEventListener("click", this.openModal.bind(this));
+        $('#upload-img').click(this.openModal.bind(this));
         var img = document.querySelectorAll(".imgdiv");
 
         $(document).on('click', 'img', function () {
