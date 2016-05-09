@@ -24,7 +24,13 @@
 
   <div id="dialog" title="Lae pilt üles">
     <?php include("upload.php"); ?>
+  </div>
 
+  <div id="img-dialog" title="Pildiandmed">
+    <span id="image"></span><br>
+    <span id="image-url"></span><br>
+    <span id="width">Laius: </span><span id="width-answer"></span><br>
+    <span id="height">Pikkus: </span><span id="height-answer"></span><br>
   </div>
 
 
