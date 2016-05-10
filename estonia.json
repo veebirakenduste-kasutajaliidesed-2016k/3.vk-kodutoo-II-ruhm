@@ -1,0 +1,55 @@
+[
+	
+	
+	{
+		"code": "TLN",
+		"value": 434810,
+		"name": "Tallinn"
+	},
+	{
+		"code": "TRU",
+		"value": 97847,
+		"name": "Tartu"
+	},
+	{
+		"code": "NR",
+		"value": 62078,
+		"name": "Narva"
+	},
+	{
+		"code": "PR",
+		"value": 41256,
+		"name": "Pärnu"
+	},
+	{
+		"code": "KJ",
+		"value": 37198,
+		"name": "Kohtla-Järve"
+	},
+	{
+		"code": "VJ",
+		"value": 18257,
+		"name": "Viljandi"
+	},
+
+	{
+		"code": "MR",
+		"value": 17315,
+		"name": "Maardu"
+	},
+	{
+		"code": "RV",
+		"value": 15400,
+		"name": "Rakvere"
+	},
+	{
+		"code": "SL",
+		"value": 14122,
+		"name": "Sillamäe"
+	},
+	{
+		"code": "VR",
+		"value": 13169,
+		"name": "Võru"
+	}
+]
