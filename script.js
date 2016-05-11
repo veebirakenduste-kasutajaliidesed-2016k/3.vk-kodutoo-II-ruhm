@@ -4,16 +4,21 @@ $(document).ready(function(){
 
     $("input[name=load]").click(function(){
         $.ajax({
-              url: 'cat1.jpg',
-              beforeSend: function(){
-                $('#text').show();
+              url: 'images.json',
+              dataType: "json",
+
+              error: function(err){
+                console.log(err);
               },
-              complete: function(){
+              success: function(array){
+                console.log(array);
+                
+                $.each( array, function( key, img ) {
+                  //append
+                  var imgHtml = $('<img src="'+img.url+'">');
+                  $("body").append(imgHtml);
+                });
               },
-              success: function(html){
-                $('#text').hide();
-                $('#picture').show();
-              }
         });
     });
 });
