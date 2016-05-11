@@ -1,0 +1,46 @@
+<!-- index.html -->
+
+<!doctype html>
+<html>
+<head>
+    <title>Kolmas kodutoo</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"> <!--  css -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> <!-- jquery -->
+    <script src="magic.js"></script> 
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1>Ajax, jQuery</h1><br><br>
+
+    <form action="process.php" method="POST">
+        
+        <!-- NAME -->
+        <div id="name-group" class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Nimi">
+            <!-- errors -->
+        </div>
+
+        <!-- EMAIL -->
+        <div id="email-group" class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" name="email" placeholder="epost@example.com">
+            <!-- errors -->
+        </div>
+
+        <!-- Kommentaar -->
+        <div id="comment-group" class="form-group">
+            <label for="kommentaar">Kommentaar</label>
+            <input type="text" class="form-control" name="kommentaar" placeholder="Kommentaar"></input>
+            <!-- errors on siin-->
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit <span class="fa fa-arrow-right"></span></button>
+
+    </form>
+
+</div>
+</body>
+</html>
