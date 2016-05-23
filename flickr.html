@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Flickr Api</title>
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<style type="text/css">
+#sq,#lg-sq,#thumb,#small,#mid,#ori {
+width: 100%
+}
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="flickr.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h2>Vali piltide suurs</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-2">
+<button type="button" class="btn btn-primary" id="sq">Ruut [75X75]</button>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-primary" id="lg-sq">Suur ruut [150X150]</button>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-primary" id="thumb">Thumbnail</button>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-primary" id="small">Väike</button>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-primary" id="mid">Keskmine</button>
+</div>
+<div class="col-md-2">
+<button type="button" class="btn btn-primary" id="ori">Orginaal</button>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<h2>Hiljuti lisatud pildid</h2>
+<button type="button" class="btn btn-success" id="button">Hiljuti lisatud pildid</button>
+<h2Tallinna pildid</h2>
+<button type"button" class="btn btn-success" id="button1">Tallinna pildid</button>
+<hr>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div id="results"></div>
+</div>
+</div>
+</div>
+</body>
+</html>
