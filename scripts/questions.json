@@ -1,0 +1,333 @@
+[
+		{
+			"titles":{
+				"pealkiri1"  : "I. Juhtimine",
+			    "pealkiri2"  : "1.1. Juhi isikuomaduste arendamine",
+			    "pealkiri3"  : "1.2. Ettevõtte visiooni sõnastamine",
+			    "pealkiri4"  : "1.3. Strateegiline planeerimine",
+			    "pealkiri5"  : "1.4. Töötajate värbamine",
+			    "pealkiri6"  : "1.5. Eesmärkidest lähtuv tegutsemine",
+			    "pealkiri7"  : "1.6. Tulemuslik juhtimine",
+			    "pealkiri8"  : "1.7. Firma suhtekorraldus"
+			},
+			"questions":{
+				"question1"  : "Tunnen, et olen ülekoormatud. Suhe abikaasa ja lastega hakkab jahenema.",
+			    "question2"  : "Paljud asjad õnnestuvad, aga siiski jääb veel palju tegemata, kuna pole piisavalt aega.",
+			    "question3"  : "Roll, mida tuleb täita ettevõttes ja isiklikus elus on mul selge. Võin vastata küsimusele: 'Kes ma olen täna?' 'Mida ma oskan?'' 'Kuhu tahan jõuda?'.",
+			    "question4"  : "Enamus eluvaldkondi on omavahel heas tasakaalus. Mul on olemas kutsumus juhitööga tegelemiseks.",
+			    "question5"  : "Isiklikud elueesmärgid ja visioon on selged ja kirja pandud.",
+			    "question6"  : "Iga eluvaldkonna jaoks on oma plaan, mida viin aktiivselt täide.",
+
+			    "question7"  : "Visioonist, missioonist ja väärtustest ei ole kunagi juttu olnud. Domineerib igapäevane operatiivne tegutsemine.",
+			    "question8"  : "Arengud, mida tulevik kaasa toob, võetakse jooksupealt ilma analüüsimata igapäevasesse tegevusse.",
+			    "question9"  : "Ettevõtte tulevikust on ainult ähmane pilt. Väärtuste ja käitumisreeglite üle käib arutelu.",
+			    "question10"  : "Ettevõtte visioon ja väärtused on kirja pandud ja kõikidele töötajatele teatavaks tehtud.",
+			    "question11"  : "Ettevõte toimib visiooni silmas pidades ja ühiseid väärtusi hinnates.",
+			    "question12"  : "Meil on dünaamiline ja väärtustele orienteeritud ettevõte.",
+
+			    "question13"  : "Igapäevased toimetused on domineerival kohal. Pole aega tegeleda firma arendamisega. On vaja firmas  tööd teha.",
+			    "question14"  : "Lühiajaline tegevus on tähtsam kui pikaajaline planeerimine. Tegeldakse pigem pakiliste, kui tähtsate asjadega. Konkreetsete eesmärkide asemel on lihtsalt tahe ühiselt tegutseda.",
+			    "question15"  : "Eesmärkide valikust saavad prioriteedid ja nendest omakorda strateegilised otsused.",
+			    "question16"  : "Ettevõttel on olemas tegevusplaan 2 kuni 3 aastaks.",
+			    "question17"  : "Ettevõttel on olemas pikaajaline kuni 5 aastane tegevusplaan.",
+			    "question18"  : "Ettevõtte strateegia kohandatakse jooksvalt vastavalt turu muutustele: vajadusel positsioneeritakse  ettevõtte ümber.",
+
+			    "question19"  : "Tööle võetakse see töötaja, kes on hetkel tööturul saadaval. Kes tuleb esimesena, see saab ka tööd.",
+			    "question20"  : "Kandidaadile esitatav nõudmiste profiil puudub. Otustavaks saab see, mis tema puhul häirib (nt. nõuab liiga kõrget palka).",
+			    "question21"  : "Töötaja valik otsustatakse töökirjelduse ja temale esitatavate nõudmiste alusel.",
+			    "question22"  : "Tegeldakse aktiivselt töötajate värbamisega . Samal ajal töötatakse koos personalifirmade ja personalinõustajatega.",
+			    "question23"  : "Tööle ei võeta mitte 'parim' kandideerija, vaid otsistakse oma valdkonnast 'parim' tegija.",
+			    "question24"  : "Tööle ei võeta mitte 'parim', vaid 'õige' töötaja. Töötaja ja temale määratud ülesanded viiakse omavahel täpselt vastavusse.",
+
+			    "question25"  : "Ettevõte toimib käskluste ja kuuletumise põhimõttel.",
+			    "question26"  : "Juhtkonna kohtumised on ebaregulaarsed, vastavalt vajadusele.",
+			    "question27"  : "Strateegia koosolekud juhtivtöötajatega toimuvad regulaarselt. Igale tegevusaastale on püstitatud üks suur eesmärk (sõda), mis tuleb võita.",
+			    "question28"  : "Juhtivtöötajatega on iga kvartal isiklikud arenguvestlused.",
+			    "question29"  : "Töötajad on kaasatud eesmärkide seadmise ja nende täitmise protsessi",
+			    "question30"  : "Töötasu on seotud töötulemustega. Sel viisil vastutavad töötajad ühiselt ettevõtte käekäigu eest.",
+
+			    "question31"  : "Oluliste otsuste aluseks on konto väljavõte ja aastaaruanne.",
+			    "question32"  : "On selge, et lisaks käibele on veel teisi olulisi mõõdikuid. Raamatupidamisest tuleb  kuu- või kvartali kasumiaruanne.",
+			    "question33"  : "On olemas plaan. Selle täitmist kontrollitakse kord kuus või kord kvartalis. Controllingu poolt tulevaid andmeid kasutatakse harva.",
+			    "question34"  : "Plaani ja selle täitmise kõrvalekaldumisel võetakse kasutusele meetmed. Nende meetmete abil suudame täita vähemalt 75% plaanist.",
+			    "question35"  : "Plaanid täidetakse peaaegu ideaalselt. Kõrvalekaldumine ei ole rohkem kui 5%.",
+			    "question36"  : "Tähtsaimaid mõõdikuid KPI-d (Key Performance Indicator) analüüsitakse korra kuus.",
+
+			    "question37"  : "Avalikkusega suhtlemist ei toimu ja puudub kommunikatsiooniplaan. Firmal ei ole ühtset kuvandit (Corporate image, corporate design).",
+			    "question38"  : "Eriliste sündmuste toimumisel üritatakse informeerida ka avalikkust. Firmal on olemas logo, kuid see muutub pidevalt.",
+			    "question39"  : "Ükskikute pressiartiklite kirjutamiseks palutakse spetsialistide abi. Firma ühtse kuvandi vajalikkusest on aru saadud.",
+			    "question40"  : "Aastane kommunikatsiooniplaan on paigas. Järgitakse firma ühtset kuvandit.",
+			    "question41"  : "Korraldatakse regulaarselt üritusi, mida kajastakse avalikkusele. Firma kuvand on täpselt paigas.",
+			    "question42"  : "Ettev. Analüüs Kontaktid meedia väljaannetega on nii head, et meist räägitakse ka ilma reklaamimata. Firma kuvand avalikkuses on positiivne."
+			},
+   			"intro":{
+				"sisjuh0"	 : "Ettevõtte juht (paljudel juhtudel ka omanik) määrab, milline on ettevõtte sisekliima ja  kuidas see paistab kliendi silmis väljapoole ehk lihtsalt öeldes ettevõtte olemuse. Nii nagu on juht, selline näeb välja ka firma. Kui juhil on isiklik elu tasakaalus ärieluga, on ka ettevõttes kõik hästi. Pahatihti on aga olukord selline, kus väikeettevõtte juht töötab liiga palju ja varem või hiljem libiseb kontroll ettevõtte üle käest. Kui juht tahab midagi oma ettevõttes muuta, peab ta kõigepealt muutma iseennast. Milline on juht, selline on ka tema meeskond. Ettevõtte teeb edukaks juhi selge nägemus ja selle eesmärgi saavutamiseks väljatöötatud strateegia. Tugev ja motiveeritud meeskond, kes teavad ja saavad aru ettevõtte ja enda  eesmärkidest, on ettevõtte edukuse eelduseks. Tipptasemel ettevõttes on kliendi ja personali huvid seatud kõrgemale ettevõtja isiklikest huvidest.<br><br> Järgnevale 7 küsimusele vastates saate ülevaate, millisel tasemel on täidetud juhi ülesanded."
+   			}
+		},
+		{
+			"titles":{
+				"pealkiri1"  : "II Kliendid",
+			    "pealkiri2"  : "2.1. Põhikompetentsi arendamine",
+			    "pealkiri3"  : "2.2. Sihtrühmale fokusseerimine",
+			    "pealkiri4"  : "2.3. Teenuse kvaliteedi tõstmine",
+			    "pealkiri5"  : "2.4. Innovatsiooni tugevdamine",
+			    "pealkiri6"  : "2.5. Müügi tugevdamine",
+			    "pealkiri7"  : "2.6. Klientide rahulolu mõõtmine",
+			    "pealkiri8"  : "2.7. Kliendisuhete hoidmime"
+			},
+			"questions":{
+				"question1"  : "Eriline kompetenst või teadmised puuduvad.",
+			    "question2"  : "Meil on olemas teatud kompetents, aga me ei ole seda teadlikult rakendanud.",
+			    "question3"  : "Me oleme aru saanud, mis on meie põhiline kompetents ja määrame sellest lähtuvalt oma tegevussuuna.",
+			    "question4"  : "Põhitegevust- ja oskust arendatakse edasi, et olemasoleval turul paremini ellu jääda.",
+			    "question5"  : "Põhitugevuste- ja oskustega tehakse pidevalt tööd, et olla konkurentsivõimeline ka uutel ja tulevikus tekkivatel turgudel.",
+			    "question6"  : "Töötame pidevalt uute toodete/teenuste kallal ja täiendame oma oskusi, et ka tulevikus aktiivselt turul tegutseda.",
+
+			    "question7"  : "Meie ettevõte näeb kõikjal enda ümber potensiaalseid kliente.",
+			    "question8"  : "Üritame tervel turul saavutada oma valdkonnas turuliidri positsiooni.",
+			    "question9"  : "Tegeleme erinevate sihtrühmadega ja võtame arvesse nende erinevaid vajadusi ja potensiaali.",
+			    "question10"  : "Oleme teinud esialgse sihtrühmade valiku. Viime läbi nende uurimist ja püüame välja selgitada nende spetsiifilised vajadused.",
+			    "question11"  : "Meie ettevõte fokusseerib selegelt eristatavale sihtrühmale. Selle sihtrühma nõudmised ja vajadused on meil täpselt teada.",
+			    "question12"  : "Firmal on praktiliselt monopoolne seisund oma nišis ja on seega oma sihtrühma valisteja. Sihtrühma tulevaste vajaduste ja soovidega ollakse hästi kursis.",
+
+			    "question13"  : "Põhiline on meie toode. Teenuse kvaliteet ei ole meile oluline.",
+			    "question14"  : "Mõistame, et meie tooted on sarnased konkurentide omadega ja eristumine on võimalik ainult parema teenindamise kaudu.",
+			    "question15"  : "Teenindamise taseme tõstmine mängib meie etteõttes suurt rolli.  (Tarnimine, müügijärgne teenindamine, reklamatsioonidega tegelemine jne.).",
+			    "question16"  : "Inimeste isikliku teenindamise taseme tõstmine on oluline. Meie sõbralik personal eristub konkurentidest. Teenuse standard on paika pandud ja selle parandamisega tegeldakse pidevalt .",
+			    "question17"  : "Meie ettevõtte teenuse pakkumise tase ja töötajate suhtumine on silmapaistev.",
+			    "question18"  : "Meie teenuse kvaliteet paneb kliendid ikka ja jälle positiivselt üllatuma. Kliendile anatakse täisteenus ja + 10% veel lisaks. Klient on meeldivalt üllatunud.",
+
+			    "question19"  : "Vaatamata tugevale turusurvele arvame: 'Mis toimis eile hästi, peab ka täna toimima'.",
+			    "question20"  : "Oleme aru saanud, et toote eluiga muutub pidevalt lühemaks.",
+			    "question21"  : "Meil on tooteportfelli analüüs, mis aitab meil otsustada toodete valiku üle.",
+			    "question22"  : "Tegeleme olemasoleva äritegevuse parandamisega, orienteerudes seejuures oma  sihtrühmale (sihtrühmale suunatud pakkumised).",
+			    "question23"  : "Tegeleme pidevalt olemasoleva parandamisega ja samaaegselt püüame äris midagi uut avastada.",
+			    "question24"  : "Firmal on hulk uusi innovatiivseid tooteid. Eesmärgiks on olla uuenduste koha pealt turuliider.",
+
+			    "question25"  : "Müügitegevus ei ole süstemaatiline. Koduleht puudub või on väga algeline.",
+			    "question26"  : "Müük on müügiosakonna ülesanne. Koduleht on olemas, aga seda ei hoita aktuaalsena.",
+			    "question27"  : "Müük on juhtkonna ja müügiosakonna ühine ülesanne. Meil on aktuaalne koduleht.",
+			    "question28"  : "Kõik töötajad saavad aru, et igaühel on mingi panus müügitegevusse.  Koduleht on optimeeritud ja seda aktualiseeritakse pidevalt.",
+			    "question29"  : "Suur hulk töötajatest omab otsest kontakti meie klientidega. Koduleht on otsingumootorite esimeste valikute hulgas ja sealt tuleb piisavalt tellimusi.",
+			    "question30"  : "Kõik töötajad tegelevad müügiga. Ka need, kes otseselt ei ole müügimeeskonnast. Ka nemad toovad tellimusi sisse. Tegeldakse aktiivse internetiturundusega.",
+
+			    "question31"  : "Kliendi rahulolu kohta puuduvad andmed.",
+			    "question32"  : "Kliendi rahulolu on teema, mille üle oleme arutlenud.",
+			    "question33"  : "Suuremate klientide rahuloluuuringut tehakse ebaregulaarselt.",
+			    "question34"  : "Meil on andmeid, et kliendid on meiega rahul ja sellest teadmisest on kasu meie igapäevasele tegevusele.",
+			    "question35"  : "Kõik kliendi andmed ja nendega seotud tegevused on CRM-programmis. See on kõigile kättesaadav ja aitab vastu võtta otsuseid.",
+			    "question36"  : "Iga üksiku kliendiga on isiklik kontakt. Jälgitakse pidevalt nende rahulolu võrreldes konkurentidega.",
+			    
+			    "question37"  : "Kliendisuhte arendamisega ei tegele keegi.",
+			    "question38"  : "Oleme sunnitud müüma ja seetõttu ei arvesta me tihti kliendi vajadustega.",
+			    "question39"  : "Kliendi suhteid arendatakse juhuslikult. (nt. Jõulukaardi saatmine).",
+			    "question40"  : "Püüame hoida häid kontakte  kõikide oma klientidega, mis tähendab meile suurt ressursimahtu.",
+			    "question41"  : "Kliendid on jagatud A-, B- ja C-klientideks. A-Klientide juurdevõitmine on oluline ja sellega tegeldakse aktiivselt.",
+			    "question42"  : "Firmal on väga hea maine ja suur 'soovitajate' hulk, kes toovad hulgaliselt uusi kliente."
+			},
+   			"intro":{
+				"sisjuh1"  : "Väide, et ettevõtte tegelik omanik on klient, peab paika. Klient võib kogu ettevõtte personali, alustades juhist ja lõpetades viimase kui töötajaga, tänavale tõsta viies oma raha konkurendi juurde. Seepärast on kliendi ootuste täitmine ettevõtte kõige tähtsam ülesanne. Tipptasemel ettevõte mitte ainult ei täida, vaid ületab kliendi ootusi. Sellega muudate kliendid fännideks, kes teie ettevõtet suure entusiasmiga oma tuttavatele soovitavad.<br><br> Järgnevale 7 küsimusele vastates saate ülevaate, millisel tasemel on teie ettevõttes turundus- ja müügitegevused täitmaks kliendi ootusi."
+   			}
+		},
+		{
+			"titles":{
+				"pealkiri1"  : "III. Meeskond",
+			    "pealkiri2"  : "3.1. Avatud kommunikatsioon",
+			    "pealkiri3"  : "3.2. Kaasamõtlejate arendamine",
+			    "pealkiri4"  : "3.3. Täiendkoolituse edendamine",
+			    "pealkiri5"  : "3.4. Vastutuse edasiandmine",
+			    "pealkiri6"  : "3.5. Asendusvõimekuse tagamine",
+			    "pealkiri7"  : "3.6. Kaasatus ja firma edus osalemine",
+			    "pealkiri8"  : "3.7. Töötajate väärtushinnangud"
+			},
+			"questions":{
+				"question1"  : "Kommunikatsioon ei toimi - kahtlused ja usaldamatus on igapäevane probleem.",
+			    "question2"  : "Töötajad saavad ainult piiratud informatsiooni.",
+			    "question3"  : "Töötajaid informeeritakse niipalju, kui nad võiksid teada ja mitte rohkem.",
+			    "question4"  : "Läbi regulaarse kirjavahetuse ja koosolekute, hoitakse töötajad firma tegevustega kursis.",
+			    "question5"  : "Töötajad on kõigest informeeritud.  (avatud suhtlemine). See tähendab samuti: 'Luukered kapist välja ja väärikalt maha matta'.",
+			    "question6"  : "Kommunikatsioon on avatud- räägitakse asjadest nii nagu nad on (vastastikune kriitika on aktsepteeritud).",
+
+			    "question7"  : "Muudatusettepanekute süsteem puudub. Töötajatest ei ole selle teema puhul mingit kasu.",
+			    "question8"  : "Muudatusettepanekute süsteem puudub. Mõned töötajad juhtivatelt ametikohtadelt tulevad ikka vahest mõne ettepanekuga lagedale.",
+			    "question9"  : "Ettepanekute protseduur on meil paigas. Inimesed teevad üksikuid ettepanekuid, mida paremaks muuta. Keskmiselt tehakse 0,5 ettepanekut töötaja kohta aastas.",
+			    "question10"  : "Ettepanekute täpne protseduur on meil paigas. Keskmiselt tehakse  2 kuni 3 ettepanekut töötaja kohta aastas. Lisaks toimib innovatsiooni töögrupp.",
+			    "question11"  : "4 kuni 7 ettepanekut töötaja kohta aastas. Neist viiakse ellu 60%. Pooled töötajatest on kaasatud aktiivsesse uuenduste ja ettepanekute protsessi.",
+			    "question12"  : "Tavapärast uuenduste- ja ettepanekute süsteemi enam ei kasutata. Kõik töötajad otsivad igapäevaselt ise, mida paremaks muuta ja viivad selle iseseisvalt ellu.",
+			    
+			    "question13"  : "Pikaajaline töösuhe eeldab iseenesest, et töötajal on piisavalt teadmisi. Täiendkoolituse vajadus puudub.",
+			    "question14"  : "Ainult juhtkond käib üksikutel koolitustel.",
+			    "question15"  : "Täiendkoolitus toimub juhuslikult ja süsteem puudub.",
+			    "question16"  : "Töötajad on tööle võetud nende tugevuste alusel. Täiendkoolitus toimub sihipäraselt juhi poolt väljavalitud programmi alusel.",
+			    "question17"  : "Iga töötaja on tööle võetud tema tugevuste alusel. Ettevõttel on sisene täiendkoolituste plaan.",
+			    "question18"  : "Pidev õppimise protsess on üks osa igapäevasest tegevusest. Iga töötaja ostustab ise oma täienduskoolituse üle.",
+			    
+			    "question19"  : "Ainult ülemus otsustab. Sellepärast on ta ka väga hõivatud igapäevaste küsimustega ja tal ei ole aega tegeleda strateegiaga.",
+			    "question20"  : "Kogu vastutus on juhtkonnal. Töötajatel on keelatud ise otsuseid vastu võtta.",
+			    "question21"  : "Otsustamise korral kaasatakse  töötajaid vastavalt vajadusele.",
+			    "question22"  : "Töötajatel on piiratud pädevus ise otsustada. Strateegiliste otsuste korral kaastakse ülemus.",
+			    "question23"  : "Valdkonna juhid tohivad ise otsuseid langetada. Ülemusel on seetõttu rohkem aega tegeleda firma tulevikuküsimustega. ",
+			    "question24"  : "Kõik töötajad võivad enda vastutusvaldkonnas ise ostustada. See kiirendab protsesse ja töötajad on paremini motiveeritud.",
+			    
+			    "question25"  : "Iga töötaja töötab oma ametil ja teeb temale määratud tööd.",
+			    "question26"  : "Inimeste haigestumised või lahkumised on esile kergitanud diskussiooni, asendusreglemendi olemasolu vajalikkusest.",
+			    "question27"  : "Töötajad omandavad osakonna sees ka teiste töötajate kvalifikatsiooni. Asendamise vajaduse paneb paika ülemus.",
+			    "question28"  : "Töötajate asendamise kord on kõigile avalikult teada ja kättesaadav.",
+			    "question29"  : "Töötajad koolitavad vastastiku teisi töötajaid ja annavad oma teadmised edasi tervele osakonnale.",
+			    "question30"  : "Kõik töötajad on osakondade lõikes asendatavad. Asendamiste kooskõlastamisi ja vastavaid lisakoolitusi kohandatakse jooksvalt.",
+			    
+			    "question31"  : "Iga töötaja saab talle määratud palka.",
+			    "question32"  : "Firmal on preemiasüsteem ainult juhtivatele töötajatele.",
+			    "question33"  : "Väga heade majandustulemuste puhul makstakse töötajatele ühekordset preemiat.",
+			    "question34"  : "Kõik juhtivtöötajad saavad osa ettevõtte headest tulemustest vastavalt võimalustele.",
+			    "question35"  : "Töötajad saavad osa ettevõtte headest tulemustest vastavalt võimalustele.",
+			    "question36"  : "Kõik töötajad saavad osa ettevõtte edukatest aastatulemustest. Töötajate kaasatus ettevõttesse on parem kui konkurentide ettevõtetes.",
+			    
+			    "question37"  : "Valitseb hirm ja survestatus. Töötajates nähakse kuluartiklit.",
+			    "question38"  : "Juhtkond hakkab aru saama, et masinapargi/seadmete eest on siiani paremat hoolt kantud, kui töötajate eest.",
+			    "question39"  : "Töötajate vajadustega on hakatud arvestama ja esimesed muudatused ka juba ellu viidud. Ainult väga suurejooneliste saavutuste korral, antakse töötajatele tagasiside.",
+			    "question40"  : "Töötajad on oma soovide ja vajadustega firma keskpunktis. Ülemuse poolt on tugev toetus ja innustus.",
+			    "question41"  : "Firmas on levinud kiitmise, tänamise ja hindamise kultuur. Töötajatel on ühised väärtushinnangud.",
+			    "question42"  : "Töötajad on hingega asja juures. Ettevõtte käekäik on nende jaoks väga oluline. Palk ei ole ainuke motivaator."
+			},
+   			"intro":{
+				"sisjuh2"  : "Ilma kvalifitseeritud ja motiveeritud meeskonnata on võimatu konkurentsis püsida. Ka töötajatel on omad vajadused. Nad tahavad olla informeeritud, soovivad tahavad kiitust ja tunnustust. Mida avatum on organisatsioon, mida rohkem töötajaid tehtud töö eest tunnustatakse, seda paremad on ettevõtte tulemused. Ettevõtte kultuuri muutmine ei toimu üleöö. See nõuab järjekindalt ja sihipärast tööd. Sõltuvalt ettevõtte suurusest võib see kesta aastaid. Tipptasemel ettevõtteks saamiseks, on vaja algust teha juba täna.<br><br> Järgnevale 7 küsimusele vastates saate ülevaate, kui hästi on täidetud ettevõttes tingimused kvalifitseeritud ja motiveeritud meeskonna kooshoidmiseks."
+   			}
+		},
+		{
+			"titles":{
+				"pealkiri1"  : "IV. Protsessid",
+			    "pealkiri2"  : "4.1. Korra hoidmine",
+			    "pealkiri3"  : "4.2. Kvaliteedi parandamine",
+			    "pealkiri4"  : "4.3. Tähtaegadest kinnipidamine",
+			    "pealkiri5"  : "4.4. Protsesside optimeerimine ",
+			    "pealkiri6"  : "4.5. Varude optimeerimine ",
+			    "pealkiri7"  : "4.6. Töö efektiivsuse mõõtmine ",
+			    "pealkiri8"  : "4.7. Ärivõrgustiku loomine"
+			},
+			"questions":{	
+				"question1"  : "On näha, et juba ammu pole ettevõttes koristatud. Ka infotahvlitel ripuvad vanad ja kolletunud teated.",
+			    "question2"  : "Mittevajalike pabereid, mappe ja tööriistu otseselt ei vedele. Töövahendite hoidmise ja paiknemise jaoks ei ole süsteemi.",
+			    "question3"  : "Kõik vajalikud töövahendid ja dokumendid on selleks ettnähtud kohal. Üksikud töötajad hakkavad ka juba  iseseisvalt töökohal korda looma.",
+			    "question4"  : "Tööriistad, mapid ja dokumendid on titlesega ja sorteeritud. Töötajad leiavad need kiiresti üles. Paljud töötajad loovad ise oma töökohal korda.",
+			    "question5"  : "Hooldus- ja koristusplaan on ettevõttel paigas. Kõikjal on ühtne süsteem, kuidas riiulites, kappides ja andmetes peab kord välja nägema.",
+			    "question6"  : "Riiulid, kapid ja digitaalsed failid on optimaalselt organiseeritud ja seda hoitakse korras. Kõik töötajad hoiavad puhtust ja korda.",
+
+			    "question7"  : "Tööd tehakse ikka nagu alati. Tihti tuleb ette reklamatsioone. Viga küll kõrvaldatakse, aga ei kõrvaldata põhjust, mis vea tekitas.",
+			    "question8"  : "Tööd tehakse hästi, aga ei pöörata palju tähelepanu kliendi ootustele. Kvaliteeti kontrollib regulaarselt kvaliteedi spetsialist.",
+			    "question9"  : "Klientide ootused on tegevuse planeerimise aluseks. Iga töötaja vastutab ise oma tehtud töö kvaliteedi eest. Analüüsitakse tekkinud vigasid.",
+			    "question10"  : "Kvaliteedi eest vastutavad isikud analüüsivad ettevõttes tekkinud vigu ja viiakse sisse vastavad ennetusmeetmed.",
+			    "question11"  : "Kõik töötajad saavad aru, et odavam on vigu vältida, kui vigu kõrvaldada. Tekkinud vigades nähakse väljakutset ja võimalust midagi uuendada või parandada.",
+			    "question12"  : "Terve ettevõtte protsess on üles ehitatud niimoodi, et vigu tekiks minimaalselt  nii tootmises kui protsessides.",
+			    
+			    "question13"  : "Tähtajad pannakse paika, aga pikad ooteajad on siiski pigem reegel kui erand. Kliendid on usaldamatuse pärast rahulolematud.",
+			    "question14"  : "Peetakse aru, kuidas paremini tagada ja kontrollida tähtaegadest kinnipidamist. Kliente teavitatakse viivitusest liiga hilja või üldse mitte.",
+			    "question15"  : "Tähtaegade täitmist mõõdetakse ja see on 70%. Kliente informeeritakse, kui tellimuse täitmine hilineb.",
+			    "question16"  : "Tähtaegadest kinnipidamise täpsus on 80%. Planeerimine on süstemaatiline. Kui tähtaegadest kinnipidamine pole võimalik, informeeritakse klienti  aegsasti ette.",
+			    "question17"  : "Tähtaegadest kinnipidamise täpsus on 95%. Tähtajad kalkuleeritakse välja täpselt nii, et klientide nõudmised saaksid rahuldatud.",
+			    "question18"  : "Tähtajad pannakse paika vastavalt klientide soovile. Tähtaegadest kinnipidamine on võrreldes konkurentidega parim.",
+			    
+			    "question19"  : "Etteantud protsessidest peetakse kinni. Neid parandatakse vaid siis, kui tekivad mingid probleemid. Planeerimine on aeganõudev ja keeruline.",
+			    "question20"  : "Juhtkond on mõistnud, et on vaja hakata parandama ettevõtte siseseid protsesse. Alustatakse üksikute valdkondade optimeerimisega.",
+			    "question21"  : "Töötajad saavad aru, et töö käib ebaeffektiivselt ja hakkavad ise üksikuid protsesse optimeerima.",
+			    "question22"  : "Töötajad tõstatavad probleemid ja lahendavad need süstemaatiliselt ise. Süstemaatiliselt väheneb resursside raiskamine.",
+			    "question23"  : "Iga tegevuse puhul küsitakse, kas see on väärtusloome protsessi juures vajalik. Peamised protsessid on dokumenteeritud ja nendele on määratud vastutav isik.",
+			    "question24"  : "Tootlikuse kasv on 30 .. 40%. Tootmise või teenuse pakkumise aeg on vähenenud poole võrra.",
+			    
+			    "question25"  : "Selleks et probleeme ära hoida, hoitakse suuri laovarusid. Mittevajalike laokoguseid esineb ettevõtte kõikides peamistes valdkondades.",
+			    "question26"  : "Juhtkond on avastanud, et laokogused on liiga suured ja asuvad tegutsema selle nimel, et neid vähendada.",
+			    "question27"  : "Iga töötaja saab aru, et laovarude vähendamise eelduseks on probleemideta toimivad protsessid.",
+			    "question28"  : "Kõik töötajad on aru saanud, et varade all ei mõelda mitte ainult laovarusid, aga ka masinaid, autosid, bürooruume jne.",
+			    "question29"  : "Kõik finantsvarad ja materiaalsed varad ning varud on pideva kontrolli all ja nende koguseid muudetakse vastavalt vajadusele.",
+			    "question30"  : "Süstemaatilise parendamispotsessi tulemusena on suudetud varud viia minimaalseks.",
+			    
+			    "question31"  : "Töötamise effektiivsust ei mõõdeta. Tööandaja ütleb mida ja kui palju kui kiiresti teha.",
+			    "question32"  : "Töötajad lähtuvad päeva tööülesannetest või päevaplaanist. Andmed on vananenud ja seepärast mitte  optimaalsed.",
+			    "question33"  : "Töökohtade töö efektiivsust mõõdetakse regulaarselt. Selle mõõtmiseks töötati välja mõõdikud.",
+			    "question34"  : "Töö efektiivsuse tõstmiseks on paigas eesmärgid. Seda hinnatakse mõõdikute süsteemi alusel. Iga töötaja soov on oma tulemust kogu aeg parandada.",
+			    "question35"  : "Töötajate efektiivsus pidevalt kasvab. Sarnaste ülesannetega osakondade vahel käib võrdlus (sisemine võrdlusindeks).",
+			    "question36"  : "Ettevõte võrdleb enda tulemusi pidevalt teiste ettevõtetega, et veelgi paremat efektiivsus saavutada (väline võrdlusindeks).",
+			    
+			    "question37"  : "Kontaktid on ainult igapäevaste tarnijatega. Sidemeid teiste võimalike partenritega ei looda.",
+			    "question38"  : "Firma ja tema tarnijad on ühel nõul, et tegemist on koostööpartneritega. Nende vahel toimub infovahetus.",
+			    "question39"  : "Tarnijaid hinnatakse regulaarselt ja nende juures viiakse läbi audit. Tarnijate ja potensiaalsete tarnijatega hoitakse pidevat kontakti.",
+			    "question40"  : "Tarnijaid hinnatakse analoogse 4 valdkonna küsimustiku tulemuste põhjal. Toimuvad regulaarsed kokkusaamised kõikide võrgustiku partnerite vahel.",
+			    "question41"  : "Ärivõrgustiku partnerid kaasatakse toote- ja protsesside arendusse. (tooraine tarnijad, disainerid, kõrgkoolid jne.)",
+			    "question42"  : "Teie tarnijad on suutnud oma tootlikust tõsta ja tarneaegu lühendada. Suur hulk partnereid on piltlikult võttes integreeritud eraldiseisva osakonnana  ettevõttesse."
+			},
+   			"intro":{
+				"sisjuh3"  : "Konkurenstsis püsimiseks ei piisa enam odavatest hindadest või kõrgest kvaliteedist. Vaja on tõsta tootlikkust. Kui teie eesmärk on olla konkurentidest parem, kiirem, kuluefektiivsem, siis on vaja pidevalt protsesse parandada ja täiendada. Koos töötajatega eesmärkide püstitamine, nende täideviimine ja tulemuste kontroll tagavad protsesside järjepideva efektiivsemaks muutmise. Tipptasemel ettevõtteks saamiseks on vaja tagada eelkõige kvaliteet, tarnekindlus ja protsesside efektiivsus, mis viib varude vähenemisele, mille tulemuseks on silmapaistvate tulemuste saavutamine.<br><br> Järgnevale 7 küsimusele vastates saate ülevaate kas teie ettevõttes on toimivad protsessid tootlikkuse ja kvaliteedi tõstmiseks."
+			}
+		},
+		{
+   			"titles":{
+    			"pealkiri1"  : "V. Finantsid",
+       			"pealkiri2"  : "5.1. Finantsvahendite planeerimine",
+		       	"pealkiri3"  : "5.2. Finantsstrateegia",
+		       	"pealkiri4"  : "5.3. Likviidsuse juhtimine",
+		       	"pealkiri5"  : "5.4. Suhtlemine ettevõtte rahastajatega",
+		       	"pealkiri6"  : "5.5. Riskide juhtimine",
+		       	"pealkiri7"  : "5.6. Kulude jälgmine",
+		       	"pealkiri8"  : "5.7. Ettevõtte väärtuse kasvatamine"
+   			},
+   			"questions":{
+    			"question1"  : "Ettevõtte käibe ja kulude arengu üle järele ei mõelda. Lähtutakse põhimõttest, et tulevikus leitakse nagunii mingi lahendus oma finantskohustuste täitmiseks.",
+		       	"question2"  : "Ettevõtte käive ja kulude planeerimine on ebaregulaarne ja lühiajaline. Seda tehakse enamasti alles siis, kui on vaja kellegagi rääkida finantseerimisest.",
+		       	"question3"  : "Ettevõtte käive ja kulud planeeritakse regulaarselt ettevõtte tegevusaasta alguses. Võetakse arvesse strateegilisest planeerimisest tulenevad seiskukohad. Plaani tulemused sisestatakse raamatupidamisse. ",
+		       	"question4"  : "Kasumi-/Kahjumi planeerimisel käigus võetakse arvesse ka tulevaste investeerimis- ja finantseerimistegevustest tulenevad muutused. ",
+		       	"question5"  : "Ettevõttel on toimiv kasumi-, finants,- ja bilansiplaneerimise süsteem. On võimalik prognoosida erinevate sündmuste mõjusid ettevõtte likviidusesele ja rentaablusele. Selle baasil on võimalik langetada otsuseid.  ",
+		       	"question6"  : "Ettevõttes on juurutatud 'rolling-wave' planeerimine, mis arvestab algset finantsplaani ja ettevõtte tegeliku seisundit. See võimaldab operatiivselt äratunda juhtimisotsustest tekkinud mõjusid ettevõtte finantsolukorrale.",
+		       	
+		       	"question7"  : "Finantsnäitajad ja suhtarvud puuduvad. Ettevõtte juhtimisel ei ole midagi pistmist finantside juhtimisega.",
+		       	"question8"  : "Ettevõtte suhtarvude arvutamiseks võetakse aluseks bilanss ja igakuine raamatupidamise aruanne.",
+		       	"question9"  : "Ettevõtte suhtarvude arvutamiseks võetakse aluseks bilanss ja igakuine raamatupidamise aruanne. Neid tulemusi analüüsitakse ja interpreteeritakse.",
+		       	"question10"  : "Ettevõtte finantsplaneerimise käigus on välja töötatud ja välja arvestatud ettevõtte tegevust iseloomustavad suhtarvud, mis on ettevõtte siht. Neid kontrollitakse regulaarselt.",
+		       	"question11"  : "Ettevõtte juhtimisel võetakse arvesse ettevõtte finantsplaneerimise suhtarvusid. Ettevõtte suhtarvud on tunduvalt paremad kui antud tegevusvaldkonnas keskmiselt või kui teie konkurentidel",
+		       	"question12"  : "Ettevõtte juhtimise ja tulemuse saavutamiseks on välja töötatud mõõdikud ja meetmed, kuidas tulemust saavutada. Meetmete kasutamist ja nende mõju tulemustele kontrollitakse operatiivselt.",
+		       	
+		       	"question13"  : "Arvete tasumisteks ei määrata kindlaid tähtaegu. Arvete laekumisi ei jälgita või toimub see ebaregulaarselt. Tihti juhtub, et likviidusus on negatiivne.",
+		       	"question14"  : "Kliendi arvete tasumine planeeritakse ette. Kuigi tasumine toimub siis, kui konto seda lubab. Tihti esineb likviidusprobleeme. ",
+		       	"question15"  : "Kliendiarvete tasumine toimub tähtajaliselt. Jälgitakse arvete laekumist ja reskontro seisu.  Laekumistega reeglina probleeme ei esine.",
+		       	"question16"  : "Ettevõttel on süsteem, kuidas tegeleda debitoorsete võlgnevustega. Võlgnikega tegeldakse aktiivselt. Ettevõttel ei esine likviidusprobleeme.",
+		       	"question17"  : "Ettevõtte likviiduses arvestamisel võetakse arvesse laenumakseid, intresse, investeeringuid ja maksusid. Debitoorset võlgnevust ei esine või see on kontrolli all. ",
+		       	"question18"  : "Likviiduse arvutamine on päevapõhine. Ettevõtte pangakontosid kontrollitakse igapäevaselt. Lühiajaliselt kontol seisvad rahasummad pannakse tähtajalisse deposiiti.",
+		       	
+		       	"question19"  : "Ettevõtte finantseerijatele edastatakse vajadusel ettevõtte bilanss ja muud nõutud dokumendid.",
+		       	"question20"  : "Aastas korra viiakse läbi ettevõtte rahastajatega bilansitulemuste analüüs. Ettevõttel puudub ülevaade, milline on ettevõtte reiting.",
+		       	"question21"  : "Ettevõtte rahastajatele saadetakse igakuine raamatupidamise aruanne. Ettevõte mõistab, et neil on rahastajate ees teavituskohustus.",
+		       	"question22"  : "Ettevõtte rahastajatele saadetakse regulaarselt aruandlust, milles kirjeldatakse ettevõtte tegevust ja aktuaalseid sündmusi. Ettevõttel on ülevaade reitingust.",
+		       	"question23"  : "Ettevõtte rahastajatega on väljatöötatud standartne raport. Lisaks raportile anatakse ülevaade plaani täituvusest ja võrdlus eelnevate perioodidega.",
+		       	"question24"  : "Ettevõtte rahastajatega on usaldusväärne koostöösuhe. Ettevõte informeerib regulaarselt ja annab ülevaateid ettevõtte tulevikuplaanidest.",
+		       	
+		       	"question25"  : "Ettevõttel on sõlmitud hädavajalikud kindlustuslepingud, ka. need mis on seadusest tulenevad. Riskianalüüsi ei toimu.",
+		       	"question26"  : "Ettevõttel on läbi viidud esialgne riskianalüüs ja on sõlmitud kõik kindlustuslepingud, mis kahju korral tagavad ettevõttele eksisteerimise.",
+		       	"question27"  : "Kõikide potensiaalsete riskiallikatega tegeldakse süstemaatiliselt. Riskianalüüs ei sisalda turust- või keskkonnast tulenevaid ettevõtlusriske.",
+		       	"question28"  : "Kõik relevantsed riskid on süstematiseeritud ja jaotatud riskikategooriatesse. Regulaarselt arutatakse ja hinnatakse riskide toimumise tõenäosust.",
+		       	"question29"  : "Riskid on jagatud kategooriatesse vastavalt tõenäosusele ja kahju suurusele. Igale riskigrupile on välja töötatud strateegia, kuidas käitutakse ohu korral.",
+		       	"question30"  : "Ettevõte tegeleb riskihinnanguga regulaarselt ja tõsiselt. Ettevõte saab aru, et hea riskianalüüs ja kahjude kõrvaldamise plaan on üks konkurentsieelistest.",
+		       	
+		       	"question31"  : "Toodete/teenuste hinnad on määratud ilma kulubaasita ja ilma täpse kalkulatsioonita. Hinna paneb paika nõudlus ja konkurents.",
+		       	"question32"  : "Toodete ja teenuste hinnad on kalkuleeritud ilma otsekulusid arvesse võtmata.",
+		       	"question33"  : "Toodete ja teenuste hindade kalkulatsioon on tehtud vastavalt ettevõtte sisemistele kuludele.",
+		       	"question34"  : "Kalkuleeritud hindasid kontrollitakse jooksvalt ja dokumenteeritakse erinevused. Kõrvalekaldeid analüüsitakse, mis võetakse arvesse uute hindade kalkuleerimisel.",
+		       	"question35"  : "Ettevõttes on välja töötatud kulude plaan. Plaani jälgitakse regulaarselt ja kõrvalekaldeid võetakse arvesse järgneva perioodi plaani korrigeerimisel.",
+		       	"question36"  : "Tänu ettevõttes juurutatud kontrollimise süsteemi on kõik kulustruktuurid läbipaistvad. Ettevõttel on selge pilt, milliseid kulusid milliste meetmetega mõjutada.",
+		       	
+		       	"question37"  : "Ettevõtte väärtus on tundmatu suurus. Ettevõtte väärtus ei oma mingit tähtsust.",
+		       	"question38"  : "Ettevõtte omanikel on ähmane ettekujutus sellest, milline võiks olla ettevõtte väärtus, kui see maha müüa. Kuidas see väärtus on ajas muutunud, pole teada.",
+		       	"question39"  : "Möödunud perioodi investeeringute tasuvus ja loodud väärtuse suurus on ettevõttel teada. Ettevõttel on ettevõtte väärtuse suuruseks konkreetne eesmärk ja teatakse neid tegureid, mis seda mõjutavad.",
+		       	"question40"  : "Ettevõtte väärtus on juba varasematel perioodidel välja arvutatud ja võetud arvesse tulevikuväärtus. Ettevõtte väärtuse suurendamine on üks teema ettevõtte strateegias.",
+		       	"question41"  : "Ettevõtte väärtus on teada ja on teada ka tegurid, mis seda väärtust kõige rohkem mõjutavad. Ettevõtte väärtuse kasvatamine on osa ettevõtte strateegiast. ",
+		       	"question42"  : "Ettevõtte väärtus on ettevõtte juhtimise üks oluline mõõdupuu. Ettevõtte väärtuse mõõtmine on controllingu süsteemi ülesandeks. "
+   			},
+   			"intro":{
+   				"sisjuh4"  : "TÜHI"
+   			}
+  			
+  		}
+	
+]
+
+
+
+
