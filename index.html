@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GAME</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<style>
+#yellowapple:first-child {
+    -webkit-border-top-left-radius: 50px;
+-webkit-border-top-right-radius: 50px;
+-moz-border-radius-topleft: 50px;
+-moz-border-radius-topright: 50px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+}
+#yellowapple:last-child {
+    -webkit-border-bottom-right-radius: 50px;
+-webkit-border-bottom-left-radius: 50px;
+-moz-border-radius-bottomright: 50px;
+-moz-border-radius-bottomleft: 50px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 50px;
+}
+
+#blueapple:first-child {
+    -webkit-border-top-left-radius: 50px;
+-webkit-border-top-right-radius: 50px;
+-moz-border-radius-topleft: 50px;
+-moz-border-radius-topright: 50px;
+border-top-left-radius: 50px;
+border-top-right-radius: 50px;
+}
+#blueapple:last-child {
+    -webkit-border-bottom-right-radius: 50px;
+-webkit-border-bottom-left-radius: 50px;
+-moz-border-radius-bottomright: 50px;
+-moz-border-radius-bottomleft: 50px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 50px;
+}
+
+ #redapple{
+   background-color: brown;
+   height: 100px;
+   width: 100px;
+   background-image: url("eatApple.jpg");
+   background-size: cover;
+ }
+
+ #yellowapple{
+   background-color: brown;
+   height: 100px;
+   width: 100px;
+   background-image: url("yellowapple.png");
+   background-size: cover;
+   margin-left: 250px;
+ }
+
+ #blueapple{
+   background-color: brown;
+   height: 100px;
+   width: 100px;
+   background-image: url("blueapple.png");
+   background-size: cover;
+   margin-left: 250px;
+ }
+
+ #score{
+   float: left;
+   margin-left: 2px;
+   font-size: 50px;
+   margin-top: 75px;
+
+ }
+
+ #togglePunane{
+   background-color: #51A834;
+   height: 50px;
+   width: 50px;
+   background-image: url("apple.png");
+   background-size: cover;
+ }
+
+ #toggleKollane{
+   background-color: #51A834;
+   height: 50px;
+   width: 50px;
+   background-image: url("yellowapple.png");
+   background-size: cover;
+   margin-top: 20px;
+ }
+
+ #toggleSinine{
+   background-color: #51A834;
+   height: 50px;
+   width: 50px;
+   background-image: url("blueapple.png");
+   background-size: cover;
+   margin-top: 20px;
+ }
+
+ header{
+   float:right;
+
+ }
+
+#redapple:hover{
+  border-style: inset;
+  border-color: red;
+}
+
+#redapple:active{
+border-color: green;
+}
+</style>
+<body>
+
+
+  <script>
+var punktid = 0;
+var biggerappleolemas = false;
+var blueappleolemas = false;
+var redappleolemas = false;
+//
+  $(document).ready(function(){
+    setInterval(function(){ kuvaskoor(); }, 500);
+      $("#redapple").click(function(){
+          $("#score").text(punktid);
+          punktid ++;
+          });
+
+          $( "#lopeta" ).click(function() {
+                  window.location.href="index.php?uid=" + parseInt(punktid);
+                  var jqxhr = $.ajax( "skoorikirjutamine.php" )
+                    .done(function() {
+                      alert( "success" );
+                    })
+                    .fail(function() {
+                      alert( "error" );
+                    })
+                    .always(function() {
+                      alert( "complete" );
+                    });
+                      });
+
+  });
+  //teeb punase õuna
+  function redapple(){
+    jQuery('<div/>', {
+  id: 'redapple',
+  title: 'Red apple',
+  rel: 'external',
+}).appendTo('#teinerida');
+  };
+
+  //teeb kollase õuna
+  function yellowapple(){
+    jQuery('<div/>', {
+  id: 'yellowapple',
+  title: 'Better apple',
+  rel: 'external',
+  }).appendTo('#redapple');
+  };
+
+  //teeb sinise õuna
+  function blueapple(){
+    jQuery('<div/>', {
+  id: 'blueapple',
+  title: 'Best apple',
+  rel: 'external',
+}).appendTo('#yellowapple');
+  };
+
+
+  function taimout(){
+   if (biggerappleolemas){
+     $("#score").text(punktid);
+      setInterval(function(){ kaksjuurde(); }, 2000);
+    }};
+
+    function taimoutBlue(){
+     if (blueappleolemas){
+       $("#score").text(punktid);
+        setInterval(function(){ viisjuurde(); }, 2000);
+      }};
+/*
+      function taimoutRed(){
+       if (redappleolemas){
+         $("#score").text(punktid);
+          setInterval(function(){ yksjuurde(); }, 2000);
+        }};
+
+*/
+function yksjuurde(){
+  punktid = punktid + 1;
+}
+
+function kaksjuurde(){
+  punktid = punktid + 2;
+}
+
+function viisjuurde(){
+  punktid = punktid + 5;
+}
+
+function kuvaskoor(){
+  $("#score").text("Skoor: " + punktid);
+}
+function ostaKollane(){
+  if(punktid > 15){
+    punktid = punktid - 15;
+    yellowapple();
+    biggerappleolemas = true;
+    taimout();
+}else{
+  alert("pole piisaalt punkte");
+}
+
+  };
+
+
+  function ostaSinine(){
+    if(punktid > 50){
+      punktid = punktid - 50;
+    blueapple();
+      blueappleolemas = true;
+      taimoutBlue();
+  }else{
+    alert("pole piisaalt punkte");
+  }
+
+    };
+/*
+    function ostaPunane(){
+      if(punktid > 1 && (!redappleolemas)){
+        punktid = punktid - 1;
+        redapple();
+        redappleolemas = true;
+        taimoutRed();
+    }else{
+      alert("pole piisaalt punkte");
+    }
+
+      };
+*/
+
+  </script>
+
+<button id="lopeta">SALVESTA SKOOR</button>
+<div id="redapple">
+</div>
+<div id="teinerida"></div>
+<div id="vaiksem">
+
+</div>
+<div id="score">
+
+</div>
+
+<header>
+  <h4>OSTA:</h4>
+<!--  <div id="togglePunane" onclick=ostaPunane() style="cursor:pointer">
+  <b><p>+1 per sec</p></b>
+    <p id="punanePrice">5p</p>
+  </div> -->
+
+  <div id="toggleKollane" onclick=ostaKollane() style="cursor:pointer">
+  <b><p>+2 per sec</p></b>
+  <p id="kollanePrice">15p</p>
+
+  </div>
+<br>
+<br>
+  <div id="toggleSinine" onclick=ostaSinine() style="cursor:pointer">
+  <b><p>+5 per sec</p></b>
+  <p id="kollanePrice">50p</p>
+
+  </div>
+</header>
+
+</body>
+</html>
