@@ -37,7 +37,7 @@
      "Kartul",
      "Kapsas",
      "Küpsised",
-     "Kiivid",
+     "Kiivi",
 //// L
      "Liköör",
 //// M
