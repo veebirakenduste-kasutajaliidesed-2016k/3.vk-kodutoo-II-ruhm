@@ -1,7 +1,7 @@
-# 3. kodutöö (II rühm) 
+# 3. kodutöö (II rühm)
 ### tähtaeg päev enne 2 nädala möödumist (vastavalt 04.05)
 
-Tee näidisrakendus, kus demonstreerid [jQuery](https://jquery.com) ja AJAX'i oskusi. 
+Tee näidisrakendus, kus demonstreerid [jQuery](https://jquery.com) ja AJAX'i oskusi.
 
 ## Nõuded
 
