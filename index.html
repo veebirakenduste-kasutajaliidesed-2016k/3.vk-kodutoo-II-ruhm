@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDfZ2e9fMIAQB_tXVdCdyRB9E9cPMEzKTU"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		var myCenter=new google.maps.LatLng(58.859323, 25.532054);
+
+		function initialize()
+		{
+		var mapProp = {
+		  center:myCenter,
+		  zoom:5,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		//Markerite lisamine algab
+		var marker = new google.maps.Marker({map: map,
+		position:{lat: Number(document.getElementById("latitude").value),
+		lng: Number(document.getElementById("longtitude").value) },
+		clickable: true
+		});
+
+
+		marker.info = new google.maps.InfoWindow({
+		  content: document.getElementById("comment").value
+
+		});
+
+		google.maps.event.addListener(marker, 'click', function() {
+		  marker.info.open(map, marker);
+		});
+		//Markerite lisamine lõppeb
+
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+	</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:600px;height:480px;"></div>
+<br/>
+<div>
+	<input type="text" id="latitude" placeholder="Latitude"/>
+	<input type="text" id="longtitude" placeholder="Longtitude"/>
+  <input type="text" id="comment" placeholder="Comment"/>
+	<input type="submit" value="Lisa" onclick="initialize()"/>
+</div>
+  <div>
+    <p>Siin lehel saad lisada Google Mapsile markerit, sisestades koordinaadid. Samuti saad markerile juurde lisada kommentaari, mis ilmub nähtavale markerile klikates.</p>
+    <a href="http://www.latlong.net/place/tallinn-estonia-5882.html" target="_blank"><p>Latitude & Longitude</p></a>
+    <p>Lingile klikates saad lehele, mis näitab sulle Tallinna koordinaadid, samuti saad lehel otsida oma kohti.</p>
+  </div>
+</body>
+</html>
