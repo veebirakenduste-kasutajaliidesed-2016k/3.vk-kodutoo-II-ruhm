@@ -1,0 +1,84 @@
+.exchange-rates {
+    width: 500px;
+    border: 1px solid black;
+    float: left;
+}
+
+#message {
+    color: red;
+}
+
+.bank {
+    width: 100%;
+}
+
+.bank p {
+    display: inline-block;
+}
+
+.bank input {
+    margin-left: 20px;
+}
+.bank button {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.exchange-rates .block {
+    width: 100%;
+    border: 1px solid black;
+    clear: both;
+    display: block;
+}
+
+.exchange-rates .block .currency {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.exchange-rates .block .rate {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.content-container {
+    width: 1000px;
+}
+
+
+
+.transaction-container {
+    width: 490px;
+    border: 1px solid black;
+    float: right;
+}
+
+.transaction-container .transaction-block {
+    width: 100%;
+    border: 1px solid black;
+    clear: both;
+    display: block;
+}
+
+.transaction-container .transaction-block .amount {
+    width: 50%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.transaction-container .transaction-block .date {
+    width: 40%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+
+/*
+transaction-container
+
+transaction-block
+
+amount
+date
