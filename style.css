@@ -1,0 +1,66 @@
+div.container, div.row, form {
+    clear: both;
+}
+div.row > div {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 170px;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px grey;
+    vertical-align: bottom;
+}
+div.row > div > img {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    bottom: 30px;
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+.done {
+    visibility: visible;
+}
+.cover {
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-9999;
+}
+.row img {
+    opacity:0;
+}
+.scoreboard {
+    float: left;
+    margin: 10px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    background: cornflowerblue;
+    color: #fff;
+    padding: 5px 31px 5px 10px;
+    border-radius:5px;
+}
+.scoreboard span {
+}
+form {
+    float:left;
+}
+.playagain {
+    float: left;
+    margin: 10px;
+    font-family: sans-serif;
+    margin-left: 50px;
+    background: cornflowerblue;
+    color: #fff;
+    padding: 7px 10px 7px 10px;
+    border-radius: 5px;
+    border: none;
+}
