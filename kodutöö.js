@@ -23,7 +23,6 @@
         $('#get').click(this.getWords.bind(this));
       },
 
-  
       getWords: function() {
         $.ajax({
           url: "sonad.txt",
@@ -43,6 +42,10 @@
 
         }});
       }
+
+
+
+
 
 
 
