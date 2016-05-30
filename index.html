@@ -4,8 +4,8 @@
     <head>
         <title>Kodu3</title>
         <meta charset="UTF-8">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js" defer></script>
-        <script type="text/javascript" src="js/youtube_controller.js" defer onload="init()"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+        <script type="text/javascript" src="js/youtube_controller.js" defer onload="init()"></script>  <!-- source https://github.com/WatersChurch/youtube_controller/tree/master-->
         <script>
             function init(){
                 $("#main_player_iframe").YTController({
@@ -20,5 +20,12 @@
     </head>
     <body>
                     <div id="main_player_iframe"></div>
+                    <div id="main_player_ctrls">
+                        <button onclick="$('#main_player_iframe').data('plugin_YTController').play()">Play</button>
+                        <button onclick="$('#main_player_iframe').data('plugin_YTController').pause()">Pause</button>
+                        <button onclick="$('#main_player_iframe').data('plugin_YTController').stop()">Stop</button>
+                        <button onclick="$('#main_player_iframe').data('plugin_YTController').mute()">Mute</button>
+                        <button onclick="$('#main_player_iframe').data('plugin_YTController').unmute()">Unmute</button>
+                    </div>
     </body>
 </html>
