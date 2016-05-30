@@ -23,6 +23,29 @@
         $('#get').click(this.getWords.bind(this));
       },
 
+  
+      getWords: function() {
+        $.ajax({
+          url: "sonad.txt",
+          success: function(result){
+            var myarray = result.split("\n");
+            for(var i = 0; i < 10; i++) {
+              var item = myarray[Math.floor(Math.random()*myarray.length)];
+              console.log(item);
+
+              if(i === 0) {
+                $("#content").html(item + "<br>");
+              } else {
+                $( "#content" ).append(item + "<br>");
+              }
+
+            }
+
+        }});
+      }
+
+
+
 
 
     };
