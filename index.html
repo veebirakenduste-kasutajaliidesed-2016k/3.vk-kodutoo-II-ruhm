@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kodu3</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js" defer></script>
+        <script type="text/javascript" src="js/youtube_controller.js" defer onload="init()"></script>
+        <script>
+            function init(){
+                $("#main_player_iframe").YTController({
+                    playerVars: {
+                        controls: 0, //peidab playeri enda pealt kontrollimise
+                        showinfo: 0, //peidab video pealt video nime
+                    },
+                    videoId: "aXFVrD38HSA",
+                });
+            }
+        </script>
+    </head>
+    <body>
+                    <div id="main_player_iframe"></div>
+    </body>
+</html>
