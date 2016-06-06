@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kodu3</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+        <script type="text/javascript" src="js/youtube_controller.js" defer onload="init()"></script>
+        <script type="text/javascript" src="index.js" defer onload="init()"></script>  <!-- source https://github.com/WatersChurch/youtube_controller/tree/master-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function init(){
+                $("#main_player_iframe").YTController({
+                    playerVars: {
+                        controls: 0, //peidab playeri enda pealt kontrollimise
+                        showinfo: 0, //peidab video pealt video nime
+                    },
+                    videoId: "aXFVrD38HSA",
+                });
+            }
+        </script>
+    </head>
+    <body>
+                    <div id="main_player_iframe"></div>
+                    <div id="main_player_ctrls">
+                        <button class="nupp" onclick="$('#main_player_iframe').data('plugin_YTController').play()">Play</button>
+                        <button class="nupp" onclick="$('#main_player_iframe').data('plugin_YTController').pause()">Pause</button>
+                        <button class="nupp" onclick="$('#main_player_iframe').data('plugin_YTController').stop()">Stop</button>
+                        <button class="nupp" onclick="$('#main_player_iframe').data('plugin_YTController').mute()">Mute</button>
+                        <button class="nupp" onclick="$('#main_player_iframe').data('plugin_YTController').unmute()">Unmute</button>
+                    </div><br>
+                    <div id="loadtext">
+                    <button class="nupp" type="button" id=load>Lae kirjeldus</button>
+                  </div>
+                  <div id="pilt"><img src="http://vignette2.wikia.nocookie.net/logopedia/images/c/c8/FailArmy_logo_.jpg"/></div>
+    </body>
+</html>
