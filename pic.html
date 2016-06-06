@@ -4,43 +4,82 @@
   <meta charset="UTF-8"> 
   <title>Pictures</title>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   
-  <script src="pic.js"></script>
   <link rel="stylesheet" href="pic.css">
+  <script type="text/javascript" src="http://http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
+  <script type="text/javascript">
+$(function(){
+var currentIndex = 0,
+  items = $('.container div'),
+  itemAmt = items.length;
+
+function cycleItems() {
+  var item = $('.container div').eq(currentIndex);
+  items.hide();
+  item.css('display','inline-block');
+
+}
+
+var autoSlide = setInterval(function() {
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+}, 30000);
+
+$('.next').click(function() {
+  clearInterval(autoSlide);
+ 
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+});
+
+$('.prev').click(function() {
+  clearInterval(autoSlide);
+  currentIndex -= 1;
+  if (currentIndex < 0) {
+    currentIndex = itemAmt - 1;
+  }
+  cycleItems();
+});
+});
+</script>
   
 </head>
 <body>
- 
-  
- <img id="slideshow" src="pictures/audi.jpg" />
-<a href="#" id="prev">Eelmine</a>
-<a href="#" id="next">Järgmine</a>
- 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.simple.slideshow.js" />
- <!-- path to slideshow script -->
-<script>
-	$('#slideshow').simpleSlideshow({
-		fadeTime: 10000,
-		fadeSpeed: 1000,
-		bindPrevious: $('#prev'), // bind button to previous image
-		bindNext: $('#next'), // bind button to next image
-		images: [
-			'pictures/audi.jpg',
-			'pictures/seat.jpg',
-			'pictures/bmw.jpg',
-		],
-		links: [
-			'http://www.mullie.eu',
-			'http://www.twitter.com/matthiasmullie',
-			'http://www.linkedin.com/in/matthiasmullie',
-		],
-		random: true
-	});
-</script> 
+<section class="demo">
+  <button class="next">Next</button>
+  <button class="prev">Previous</button>
+  <div class="container">
+    <div style="display: inline-block;">
+      <img src="pictures/audi.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/bmw.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/bmw.png"/>
+    </div>
+    <div>
+      <img src="pictures/seat.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/toyata.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/Volkswagen-e-Golf.jpg"/>
+    </div>
+  </div>
+</section>
 
-
-
+<div class="explanation">
+<h1>Mõned auto pildid</h1>
+</div>
 <!-- begin htmlcommentbox.com -->
  <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="http://www.htmlcommentbox.com/static/skins/default/skin.css" />
