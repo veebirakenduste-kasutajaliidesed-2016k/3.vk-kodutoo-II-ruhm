@@ -10,11 +10,12 @@ or die('Could not select database.');
 $term = strip_tags(substr($_POST['search_term'],0, 100));
 $term = mysql_escape_string($term);
 
-$sql = "select name,phone
-from directory
-where name like '%$term%'
-or phone like '%$term%'
-order by name asc";
+$sql = "SELECT name,phone
+FROM directory
+WHERE name LIKE '%$term%'
+OR phone LIKE '%$term%'
+ORDER BY name asc";
+
 
 $result = mysql_query($sql);
 
