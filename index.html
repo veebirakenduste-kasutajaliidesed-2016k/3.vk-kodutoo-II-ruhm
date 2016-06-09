@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <title>YouTube Videos</title>
+</head>
+<body>
+  <div id="background">
+  <div id="search_banner">
+    <h1>
+  <a href="index.html">
+    <img src="img/yt.png" alt="Youtube logo" width="10%" height="10%"/>
+  </a>
+</h1>
+    <form id="search_value">
+      <input type="text" id="query" placeholder="Otsi..." value="">
+      <input type="submit" class="btn btn-success btn" value="Otsi">
+    </form>
+	
+  </div>
+  <div id="body_container">
+    <div id="iframe_container"></div>
+		<div class="row "id="search_results">
+      <ul id="result_display"></ul>
+      <button id="prevBtn" type="button" hidden>Eelmised</button>
+      <button id="nextBtn" type="button" hidden>Järgmised</button>
+		</div>
+
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/actions.js"></script>
+</body>
