@@ -20,7 +20,7 @@
         <label for="search_term">Search name/phone</label>
         <input type="text" name="search_term" id="search_term"
           </form>
-                  <button type="submit"  value="search" class="btn btn-primary" id="search_button" method="post">Search</button>
+                <input type="submit"  value="search" id="search_button" class="btn btn-primary"/>
           </div>
               </form>
                 <div id="search_results"></div>
@@ -58,7 +58,7 @@
                                  	<input name="car_plate" type="text" value="<?=$create_name; ?>"> <br><br>
                                    	<label>number</label><br>
                                  	<input name="color" type="text" value="<?=$create_number; ?>"> <br><br>
-                                   	<input type="submit" name="create" value="Salvesta">
+                                   	<input type="submit" name="create" class="btn btn-primary" value="Salvesta">
                                    </form>
 </body>
 </html>
