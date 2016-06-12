@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo</title>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="menu">
+    <ul class="menu-list">
+      <li class="menu-item"><a href="#home-view" class="menu-link home-view active-menu">Avaleht</a></li>
+      <li class="menu-item"><a href="#list-view" class="menu-link list-view">Loend</a></li>
+      <li class="menu-item"><a href="#manage-view" class="menu-link manage-view">Haldus</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+
+    <div id="list-view">
+      <h1>Loend</h1>
+      <p class="loading">Laeb...</p><br>
+      <input type="search" placeholder="Otsi ülesannet..." id="search"><br>
+      <div class="change">
+        <p name="id_holder" class="id_holder"></p>
+        <label for="change_title">Nimi: </label><br>
+        <input type="text" placeholder="..." name="change_title" class="change_title"><br>
+
+        <label for="change_task">Ülesanne: </label><br>
+        <input type="text" placeholder="..." name="change_task" class="change_task"><br>
+
+        <label for="change_due_date">Kuupäevaks: </lable><br>
+        <input type="date" name="change_due_date" class="change_due_date"><br>
+
+        <button class="cancel-change-item pull-left">Loobu</button><button class="change-item pull-left">Muuda</button><br>
+      </div>
+      <ul class="list-of-tasks"></ul>
+    </div>
+    <div id="manage-view">
+      <h1>Haldus</h1>
+
+      <p class="adding-message"><p>
+
+      <label for="title">Nimi: </label><br>
+      <input type="text" placeholder="..." name="title" class="title"><br>
+
+      <label for="task">Ülesanne: </label><br>
+      <input type="text" placeholder="..." name="task" class="task"><br>
+
+      <label for="due_date">Kuupäevaks: </lable><br>
+      <input type="date" name="due_date" class="due_date"><br>
+
+      <button class="add-new-item pull-right">Lisa uus ülesanne</button>
+    </div>
+
+    <div id="home-view">
+      <h1>Avaleht</h1>
+      <p>Siin saab märkida enda ülesandeid.</p>
+    </div>
+
+  </main>
+
+</body>
+</html>
