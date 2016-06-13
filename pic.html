@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <title>Pictures</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="pic.css">
+
+  <script type="text/javascript">
+$(function(){
+var currentIndex = 0,
+  items = $('.container div'),
+  itemAmt = items.length;
+ ///AJAX
+	var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (xhttp.readyState == 4 && xhttp.status == 200) {
+				var data = JSON.parse(xhttp.responseText);				
+				var table = document.getElementById('info');
+				for(var i=0; i<data.length; i++){
+					//console.log(data[i]);
+					var row = table.insertRow(i);
+					var col = row.insertCell(0);
+					col = row.insertCell(0);
+					col.innerHTML = data[i].title;
+					col = row.insertCell(1);
+					col.innerHTML = data[i].color;
+					}
+				
+				
+			}
+		};
+		xhttp.open("GET", "pic.php", true);
+		xhttp.send();
+function cycleItems() {
+  var item = $('.container div').eq(currentIndex);
+  items.hide();
+  item.css('display','inline-block');
+
+}
+
+
+var autoSlide = setInterval(function() {
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+}, 30000);
+
+$('.next').click(function() {
+  clearInterval(autoSlide);
+ 
+  currentIndex += 1;
+  if (currentIndex > itemAmt - 1) {
+    currentIndex = 0;
+  }
+  cycleItems();
+});
+
+$('.prev').click(function() {
+  clearInterval(autoSlide);
+  currentIndex -= 1;
+  if (currentIndex < 0) {
+    currentIndex = itemAmt - 1;
+  }
+  cycleItems();
+});
+});
+</script>
+  
+</head>
+<body>
+<section class="demo">
+  <button class="next">Next</button>
+  <button class="prev">Previous</button>
+  <div class="container">
+    <div style="display: inline-block;">
+      <img src="pictures/audi.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/bmw.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/bmw.png"/>
+    </div>
+    <div>
+      <img src="pictures/seat.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/toyata.jpg"/>
+    </div>
+    <div>
+      <img src="pictures/Volkswagen-e-Golf.jpg"/>
+    </div>
+  </div>
+</section>
+
+<div class="explanation">
+<h1>Mõned auto pildid</h1>
+</div>
+<table id="info">
+</table>
+</body>
+</html>
