@@ -35,7 +35,9 @@ main {
 #search {
   border: 1px solid black;
 }
-.change {
+
+.change,
+.show-notes {
   display: none;
 }
 .adding-message {
@@ -114,12 +116,19 @@ main {
 }
 .add-new-item,
 .change-item,
-.cancel-change-item {
+.cancel-change-item,
+.add-new-note,
+.load-notes,
+.hide-notes,
+.show-notes {
+    width: 200px;
+    height: 50px;
     background-color: #000;
     padding: 10px;
     border: 1px solid rgb(100, 100, 100);
     color: white;
 }
+
 label {
     color: gray;
 }

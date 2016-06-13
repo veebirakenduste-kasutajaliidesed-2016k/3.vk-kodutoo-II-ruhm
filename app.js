@@ -115,6 +115,10 @@
       $('.add-new-item').on('click', this.addNewClick.bind(this));
       $('.change-item').on('click', this.ChangeClick.bind(this));
       $('.cancel-change-item').on('click', this.CancelChangeClick.bind(this));
+      $('.load-notes').on('click', this.LoadNotesClick.bind(this));
+      $('.add-new-note').on('click', this.AddNoteClick.bind(this));
+      $('.hide-notes').on('click', this.HideNotesClick.bind(this));
+      $('.show-notes').on('click', this.ShowNotesClick.bind(this));
       //kuulan trükkimist otsikastis
       $('#search').on('keyup', this.search.bind(this));
     },
@@ -205,6 +209,31 @@
         }
       }
     },
+    LoadNotesClick: function(){
+
+      $.PostItAll.load();
+    },
+
+    AddNoteClick: function(){
+      $.PostItAll.new({
+      features: {
+          savable : true
+      }
+      });
+    },
+
+    HideNotesClick: function(){
+      $.PostItAll.hide();
+      $(".show-notes").css({ display: "block" });
+      $(".hide-notes").css({ display: "none" });
+    },
+
+    ShowNotesClick: function(){
+      $.PostItAll.show();
+      $(".show-notes").css({ display: "none" });
+      $(".hide-notes").css({ display: "block" });
+    },
+
     CancelChangeClick: function(){
       $('.change').hide();
     },

@@ -5,6 +5,8 @@
   <title>ToDo</title>
   <script src="app.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="dist/jquery.postitall.css">
+  <script src="dist/jquery.postitall.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -50,15 +52,17 @@
 
       <label for="due_date">Kuupäevaks: </lable><br>
       <input type="date" name="due_date" class="due_date"><br>
-
       <button class="add-new-item pull-right">Lisa uus ülesanne</button>
     </div>
-
     <div id="home-view">
-      <h1>Avaleht</h1>
-      <p>Siin saab märkida enda ülesandeid.</p>
+      <h1>Märkmed</h1>
+      <div class="notes-div">
+        <button class="add-new-note">Lisa uus märkmeleht</button><br>
+        <button class="load-notes">Laadi salvestatud märkmelehed</button><br>
+        <button class="hide-notes">Peida kõik märkmed</button>
+        <button class="show-notes">Näita kõiki märkmeid</button>
+      </div>
     </div>
-
   </main>
 
 </body>
