@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic fotorama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+  <!-- Fotorama -->
+  <link href="fotorama.css" rel="stylesheet">
+  <script src="fotorama.js"></script>
+
+  <!-- Just don’t want to repeat this prefix in every img[src] -->
+
+</head>
+
+<body>
+  <div id="container">
+
+<!-- Fotorama -->
+  <div class="fotorama" data-width="700" data-ratio="700/467" data-max-width="100%">
+    <img src="1.jpg">
+    <img src="2.jpg">
+    <img src="3.jpg">
+    <img src="4.jpg">
+
+  </div>
+  <div id="button">
+    <button id="button1" type="button">Write to File</button>
+
+  </div>
+
+</div>
+</body>
+
+<script type='text/javascript'>
+$('#button1').click(function(){
+ $.ajax({
+ type: "POST",
+ url: "save.php",
+ data: "",
+ success: function(msg){
+     alert(msg);
+ },
+ error: function(XMLHttpRequest, textStatus, errorThrown) {
+    alert("Some error occured");
+ }
+ });
+});
+</script>
+</html>
