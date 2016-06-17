@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?=
+$create_name = "";
+$create_number = "";
+require_once("addnumb.php");
+ ?>
 <html>
 <html lang="en">
 <head>
@@ -11,7 +16,6 @@
 </head>
 <script src="jquery-1.12.4.min.js"></script>
 <?php require_once("config.php"); ?>
-<?php require_once("addnumb.php"); ?>
 
 <body><center>
 <h1>Search our Phone Directory</h1>
@@ -50,15 +54,12 @@
 
 
 
-
                                   <h1>Add new number</h1>
+                                  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
+                                  	<input name="name" type="name" placeholder="name" value="<?php echo $create_name; ?>"><br><br>
+                                  	<input name="number" type="number" placeholder="number" value="<?php echo $create_number; ?>"><br><br>
+                                  	<input type="submit" name="create" value="lisa">
+                                  </form>
 
-                                   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
-                                   	<label>Nimi</label><br>
-                                 	<input name="car_plate" type="text" value="<?=$create_name; ?>"> <br><br>
-                                   	<label>number</label><br>
-                                 	<input name="color" type="text" value="<?=$create_number; ?>"> <br><br>
-                                   	<input type="submit" name="create" class="btn btn-primary" value="Salvesta">
-                                   </form>
 </body>
 </html>
