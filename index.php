@@ -2,7 +2,6 @@
 <?=
 $create_name = "";
 $create_number = "";
-require_once("addnumb.php");
  ?>
 <html>
 <html lang="en">
@@ -16,6 +15,7 @@ require_once("addnumb.php");
 </head>
 <script src="jquery-1.12.4.min.js"></script>
 <?php require_once("config.php"); ?>
+<?php require_once("addnumb.php"); ?>
 
 <body><center>
 <h1>Search our Phone Directory</h1>
@@ -50,16 +50,31 @@ require_once("addnumb.php");
                                      }
                                     })
                                   }
+
+                                  function save(){
+                                    var txt1 = document.getElementsByName("name");
+                                    var txt2 = document.getElementsByName("number");
+                                    $.post("./addnumb.php", {txt1, txt2}, function(data){
+                                      var data = {
+                                            from : from.val(),
+                                            to : to.val(),
+                                            speed : speed
+                                        };
+                                     console.log(data);
+                                    })
+                                  }
                                   </script>
 
 
 
                                   <h1>Add new number</h1>
-                                  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" >
-                                  	<input name="name" type="name" placeholder="name" value="<?php echo $create_name; ?>"><br><br>
-                                  	<input name="number" type="number" placeholder="number" value="<?php echo $create_number; ?>"><br><br>
-                                  	<input type="submit" name="create" value="lisa">
-                                  </form>
+
+
+                                   	<label>Name</label><br>
+                                 	<input name="name" type="text" id="name"> <br><br>
+                                   	<label>Number</label><br>
+                                 	<input name="number" type="text" id="number"> <br><br>
+                                   	<button name="create" onclick="save()" class="btn btn-primary"> Salvesta 	</button>
 
 </body>
 </html>
