@@ -52,14 +52,10 @@ $create_number = "";
                                   }
 
                                   function save(){
-                                    var txt1 = document.getElementsByName("name");
-                                    var txt2 = document.getElementsByName("number");
-                                    $.post("./addnumb.php", {txt1, txt2}, function(data){
-                                      var data = {
-                                            from : from.val(),
-                                            to : to.val(),
-                                            speed : speed
-                                        };
+                                    var txt1 = document.getElementById("name").value;
+                                    var txt2 = document.getElementById("number").value;
+                                    $.post("./addnumb.php", {name: txt1, number: txt2}, function(data){
+
                                      console.log(data);
                                     })
                                   }

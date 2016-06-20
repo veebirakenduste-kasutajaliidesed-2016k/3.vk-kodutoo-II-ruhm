@@ -4,7 +4,6 @@ if(isset($_POST["name"])){
   addNumber($_POST["name"], $_POST["number"]);
 }
 
-
 function addNumber($create_name, $create_number){
   // globals on muutuja kõigist php failidest mis on ühendatud
 
